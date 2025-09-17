@@ -15,4 +15,4 @@ def GCD(a,b):
 a = int(input('enter a: '))
 b = int(input('enter b: '))
 
-print(GCD(a, b))
+print(GCD(a,b))
