@@ -20,6 +20,7 @@ def display(x):
         print('emty stack')
     else:
         print(stack)
+    
 x=True
 while True:
     choice = input("Enter your choice: ")
@@ -32,6 +33,9 @@ while True:
         peek(x)
     elif choice == "dis":
         display(x)
-    
+    elif choice == "exit":
+        print('exiting')
+        break
+        
 
 
