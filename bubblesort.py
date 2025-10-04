@@ -12,6 +12,6 @@ def bubble(list_a):
     return list_a 
 
 
-print(bubble([4,8,1,14,8,2,9,5,7,6,6]))
+print(bubble([2,5,1,9,8,7,6,5]))
 
 
