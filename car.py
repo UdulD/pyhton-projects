@@ -30,10 +30,7 @@ class Car:
 
 Car1 = Car(5,'toyota','axio',2014)
 Car1.start()
-
 Car1.add_fuel(10)
 Car1.drive(15)
-
-
 Car1.screen()
  
