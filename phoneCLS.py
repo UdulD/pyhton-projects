@@ -6,6 +6,7 @@ class Phone:
     def charge(self,time):
         battery_pctg=self.battery + time/5
         if battery_pctg>=100:
+            self.battery=100
             print('fully charged 100%')
         else:
             self.battery=battery_pctg
@@ -32,6 +33,9 @@ class Phone:
     def display(self):
         print(self.battery,'%',"  ",self.storage,'GB','space remaining'  )
 
+    def rem_storage(self):
+        print(self.storage, "GB space remaining")
+
     
 
     
@@ -46,8 +50,10 @@ apple=Phone(512,10)
 apple.charge(10)
 apple.install(200)
 apple.need_to_charge()
+apple.install(100)
 apple.display()
-
+apple.charge(100)
+apple.rem_storage()
 
 
 
