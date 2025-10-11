@@ -6,15 +6,17 @@ def binary(arr,n):
         mid=(lower+upper)//2
         if arr[mid]==n:
             return mid
+        
         elif arr[mid]>n:
                 upper=mid-1
         else:
             lower=mid+1
             
-    print('not found')
+    return None
 
 arr=[1,2,3,4,5,6,7,8,9,10,11]
+n=11
 
+print(binary(arr,n))
 
-print(binary(arr,11))
 
