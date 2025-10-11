@@ -28,10 +28,10 @@ def partition(a_list,first,last):
     return right_mark
 
 # Test the quicksort
-if _name_ == "_main_":
-    arr = [38, 27, 43, 3, 9, 82, 10]
-    print("Unsorted array:", arr)
-    quick_sort(arr, 0, len(arr)-1)
-    print("Sorted array:", arr) 
+
+arr = [38, 27, 43, 3, 9, 82, 10]
+print("Unsorted array:", arr)
+quick_sort(arr, 0, len(arr)-1)
+print("Sorted array:", arr) 
 
 
