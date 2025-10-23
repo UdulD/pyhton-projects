@@ -1,17 +1,22 @@
-def bubble(list_a):
-    indexing_length = len(list_a) - 1 
-    sorted = False 
+def bubble_sort(arr):
+    n = len(arr)
+    for i in range(n - 1):
+        # Flag to check if any swapping happened
+        swapped = False
+        for j in range(0, n - i - 1):
+            if arr[j] > arr[j + 1]:
+                # Swap if elements are in wrong order
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+        # If no swapping happened, list is already sorted
+        if not swapped:
+            break
 
-    while not sorted:  
-        sorted = True 
+# Example use
+nums = [64, 34, 25, 12, 22, 11, 90]
+print("Before sorting:", nums)
+bubble_sort(nums)
+print("After sorting:", nums)
 
-        for i in range(0, indexing_length):
-            if list_a[i]> list_a[i+1] :
-                sorted = False 
-                list_a[i], list_a[i+1] = list_a[i+1], list_a[i] 
-    return list_a 
-
-
-print(bubble([2,5,1,9,8,7,6,5]))
 
 
