@@ -10,6 +10,6 @@ def selection(arr):
 
     return arr
 
-arr=[2,1,5,9,4,3,7,11,8]
+arr=[2,4,1,5,3,6]
 
 print(selection(arr))
