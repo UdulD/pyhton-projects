@@ -1,12 +1,15 @@
-nums=[1,2,3,6,8,9,2]
-k=1
+nums = [1,2,3,6,8,9,2]
+k = 2
 
 def dif():
+    pairs=[]
     for i in range(len(nums)):
-        for j in range(i+1,len(nums)):
-            if abs(nums[i]-nums[j])==k:
-                print(nums[i], ',',nums[j])
+        for j in range(i+1, len(nums)):
+            if abs(nums[i] - nums[j]) == k:
+                pairs.append((nums[i],nums[j]))
 
+    return pairs
 
-results=dif()
-print(results)
+    
+
+print(dif())
