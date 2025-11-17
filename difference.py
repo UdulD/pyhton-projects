@@ -1,5 +1,5 @@
 nums=[1,2,3,6,8,9,2]
-k=0
+k=1
 
 def dif():
     for i in range(len(nums)):
