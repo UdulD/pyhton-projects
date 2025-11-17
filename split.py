@@ -2,7 +2,6 @@ text = "hello world this is python python programming "
 split=text.split()
 
 
-
 def unique_words():
     count=len(split)
     for i in range(len(split)):
